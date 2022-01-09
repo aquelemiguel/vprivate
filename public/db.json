@@ -1,0 +1,59 @@
+[
+  {
+    "title": "Crédito Habitação",
+    "description": [
+      "Qualquer que seja a sua necessidade, estamos aqui para o ajudar a encontrar a melhor proposta de crédito.",
+      "A parceria com as principais Instituições Bancárias permite-nos ter acesso às soluções mais avançadas e nas melhores condições.",
+      "Disponibilize-nos os documentos e as informações necessárias e nós tratamos do processo de crédito sem qualquer custo para si.",
+      "O nosso compromisso é a procura da melhor solução."
+    ],
+    "features": [
+      "Comprar casa",
+      "Construir casa",
+      "Transferir crédito",
+      "Obras",
+      "Comprar terreno",
+      "Reforçar hipoteca"
+    ]
+  },
+  {
+    "title": "Crédito Pessoal & Cartão Crédito",
+    "description": [
+      "Apoiamo-lo na realização dos seus projetos ou na obtenção do cartão de crédito que mais se ajusta ao seu perfil.",
+      "Fale connosco e nós tratamos de todo o processo de crédito sem qualquer custo para si.",
+      "O nosso compromisso é a procura da melhor solução."
+    ],
+    "features": [
+      "Energias renováveis",
+      "Formação",
+      "Transferir crédito",
+      "Saúde",
+      "Outras finalidades",
+      "Crédito consolidado"
+    ]
+  },
+  {
+    "title": "Crédito Automóvel",
+    "description": [
+      "Escolha o carro e venha ter connosco. Otimize o seu tempo.",
+      "Tratamos de todo o processo de financiamento do seu carro sem qualquer custo para si.",
+      "O nosso compromisso é a procura da melhor solução."
+    ],
+    "features": [
+      "Crédito automóvel",
+      "ALD",
+      "Leasing",
+      "Crédito com reserva propriedade"
+    ]
+  },
+  {
+    "title": "Empresas",
+    "description": [
+      "Quer modernizar a sua empresa ou aumentar a capacidade produtiva?",
+      "Juntos encontraremos as soluções de financiamento que mais se ajustam ao seu objetivo.",
+      "Temos experiência e os melhores parceiros financeiros.",
+      "O nosso compromisso é a procura da melhor solução."
+    ],
+    "features": []
+  }
+]
