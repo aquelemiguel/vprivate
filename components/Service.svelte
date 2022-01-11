@@ -30,7 +30,7 @@
 <style lang="scss">
     :root {
         --main-bg-color: rgb(250, 250, 250);
-        --alt-bg-color: #0047bf;
+        --alt-bg-color: #003690;
     }
 
     main {
@@ -130,7 +130,6 @@
     .service-description {
         grid-column: 2;
         grid-row: 2;
-        text-align: justify;
     }
 
     .service-button {
