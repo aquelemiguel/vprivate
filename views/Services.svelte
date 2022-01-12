@@ -8,5 +8,4 @@
 	{#each data as service, i}
 		<Service data={service} altTheme={i % 2 !== 0}/>
 	{/each}
-	<!-- <Footer /> -->
 </main>

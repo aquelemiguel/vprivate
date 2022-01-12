@@ -1,9 +1,9 @@
 <div class="footer-container">
     <div class="footer-column">
         <h2>Navegação</h2>
-        <div>Contactos</div>
-        <div>Política de Privacidade</div>
-        <div>Termos & Condições</div>
+        <div>Quem somos</div>
+        <div>Serviços</div>
+        <div>Parceiros</div>
     </div>
     <div class="footer-column">
         <h2>Navegação</h2>
@@ -13,13 +13,15 @@
     </div>
     <div class="footer-column">
         <h2>Informação Legal</h2>
-        <div>Intermediário de Crédito Vinculado pelo Banco de Portugal: 0006527</div>
+        <div>ICV nº XXXXXXX</div>
+        <div>RAL</div>
+        <div>Livro de Reclamações</div>
     </div>
 </div>
 
 <style>
     h2 {
-        margin-top: unset;
+        margin: unset;
     }
 
     .footer-container {
@@ -28,7 +30,7 @@
         bottom: 0;
         width: 100%;
         background-color: #003690;
-        height: 25vh;
+        height: 40vh;
     }
 
     .footer-column {
@@ -37,6 +39,10 @@
         flex-direction: column;
         color: #eae6e5;
         align-self: center;
+    }
+    
+    .footer-column h2 {
+        margin: 0 0 2rem 0;
     }
 
     .footer-column div {

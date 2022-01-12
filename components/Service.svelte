@@ -2,7 +2,7 @@
     export let data, altTheme;
 </script>
 
-<main class="{altTheme ? 'alt-theme' : 'default-theme'}">
+<main id="{data.id}" class="{altTheme ? 'alt-theme' : 'default-theme'}">
     <div class="container">
         <div class="service-grid">
             <div class="service-image">
@@ -18,12 +18,6 @@
             </div>
             <button class="service-button">Vamos conversar?</button>
         </div>
-
-        <!-- <div class="subservices-row">
-            {#each data.features as feature}
-                <div class="subservice-cell">{feature}</div>
-            {/each}
-        </div> -->
     </div>
 </main>
 
@@ -50,7 +44,6 @@
         transition: all 0.2s ease-in-out;
     }
 
-    // invert colors on button hover 
     button:hover {
         background-color: var(--main-bg-color);
         color: var(--alt-bg-color);
