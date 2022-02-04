@@ -4,13 +4,27 @@
 
 <main id="{data.id}" class="{altTheme ? 'alt-theme' : 'default-theme'}">
     <div class="container">
+        <div class="service-title">
+            <h1>{data.title}</h1>
+        </div>
+
+        <!-- <span class="service-subtitle">
+            O que pretende?
+        </span> -->
+
+        <div class="subservice-flex">
+            {#each data.features as feature}
+                <div class="subservice-item">{ feature }</div>
+            {/each}
+        </div>
+
         <div class="service-grid">
             <div class="service-image">
                 <img src="images/example.jpg" alt="" />
             </div>
-            <div class="service-title">
+            <!-- <div class="service-title">
                 <h1>{data.title}</h1>
-            </div>
+            </div> -->
             <div class="service-description">
                 {#each data.description as line}
                     <p>{line}</p>
@@ -28,7 +42,7 @@
     }
 
     main {
-        height: 100vh;
+        min-height: 100vh;
     }
 
     button {
@@ -47,7 +61,6 @@
     button:hover {
         background-color: var(--main-bg-color);
         color: var(--alt-bg-color);
-
     }
 
     .default-theme {
@@ -57,6 +70,8 @@
         -webkit-animation: gradient 5s ease infinite;
         -moz-animation: gradient 5s ease infinite;
         animation: gradient 5s ease infinite;
+
+        color: black;
     }
 
     .alt-theme {
@@ -81,11 +96,15 @@
             background-position: 0% 50%;
         }
     }
-    
+
     .container {
-        max-width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 55%;
         margin: 0 auto;
-        transform: translateY(50%);
+        min-height: 100vh;
     }
 
     h1 {
@@ -96,37 +115,70 @@
         font-size: 20px;
     }
 
+    p:first-child {
+        margin-top: 0;
+    }
+
+    .service-title {
+        align-self: center;
+    }
+
+    .service-subtitle {
+        font-size: 1rem;
+        margin: 2rem 0;
+    }
+
+    .subservice-flex {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin: 3rem 0 2rem 0;
+    }
+
+    .subservice-item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		width: 240px;
+		height: 100px;
+		padding: 0 1em;
+		margin: 0.5em;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        border-radius: 5px;
+        padding: 10px;
+        font-weight: bold;
+        // background-color: var(--alt-bg-color);
+    }
+
     .service-grid {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
-
+        grid-template-columns: auto;
+        gap: 2rem;
+        margin: 2rem 0;
     }
 
     .service-image {
         grid-column: 1;
-        grid-row: 1/4;
+        grid-row: 1/3;
 
         img {
+            max-width: 100%;
             border-radius: 1.5em;
             box-shadow: rgba(0, 0, 0, 0.75) 0px 20px 30px -10px;
         }
     }
 
-    .service-title {
-        display: flex;
-        align-items: center;
+    .service-description {
+        margin-left: 2rem;
         grid-column: 2;
         grid-row: 1;
     }
 
-    .service-description {
+    .service-button {
+        margin-left: 2rem;
         grid-column: 2;
         grid-row: 2;
-    }
-
-    .service-button {
-        grid-column: 2;
-        grid-row: 3;
     }
 </style>

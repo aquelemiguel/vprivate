@@ -22,9 +22,10 @@
 
                 <div class="services-row">
                     {#each data as service}
-                        <div class="service-row-box" on:click={() => navigateTo(`/services#${service.id}`)}>
-                            { service.title }
-                        </div>
+						<div class="service-row-box" on:click={() => navigateTo(`/services#${service.id}`)}>
+							<span class="service-title">{service.title}</span>
+							<span class="learn-more">Saiba mais...</span>
+						</div>
                     {/each}
                 </div>
             </div>
@@ -113,16 +114,15 @@
 
 	.service-row-box {
 		display: flex;
+		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		text-align: center;
 		width: 240px;
 		height: 150px;
-		font-size: 24px;
-		padding: 0 1em;
-		margin: 0.5em;
+		padding: 0 2rem;
+		margin: 0.5em 0.5em 0 0.5em;
 		border: 2px solid white;
-		font-weight: 600;
 		box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 	}
 
@@ -131,6 +131,17 @@
 		color: black;
 		transition: all 0.3s ease-in-out;
 		cursor: pointer;
+	}
+
+	.service-title {
+		font-size: 1.5rem;
+		font-weight: 600;
+		margin: auto 0;
+	}
+
+	.learn-more {
+		font-size: 0.75rem;
+		margin-bottom: 1rem;
 	}
 
 	.about-container {

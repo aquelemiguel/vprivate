@@ -1,9 +1,9 @@
 <div class="footer-container">
     <div class="footer-column">
         <h2>Navegação</h2>
-        <div>Quem somos</div>
-        <div>Serviços</div>
-        <div>Parceiros</div>
+        <div on:click={() => window.location.href = '/about'}>Quem somos</div>
+        <div on:click={() => window.location.href = '/services'}>Serviços</div>
+        <div on:click={() => window.location.href = '/partners'}>Parceiros</div>
     </div>
     <div class="footer-column">
         <h2>Navegação</h2>
