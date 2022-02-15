@@ -7,7 +7,7 @@
     </div>
     <div class="footer-column">
         <h2>Navegação</h2>
-        <div>Contactos</div>
+        <div on:click={() => window.location.href = '/contacts'}>Contactos</div>
         <div>Política de Privacidade</div>
         <div>Termos & Condições</div>
     </div>

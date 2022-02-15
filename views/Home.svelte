@@ -34,12 +34,12 @@
 
     <div class="about-container">
         <div class="about-overlay">
-            <h2>Sobre nós</h2>
+            <h2>Bem-vindo</h2>
             <p>Somos uma empresa do Grupo V Private e temos como missão a definição, conjunta e totalmente gratuita para si, da melhor solução de crédito para a concretização do seu projeto.</p><br/>
             
             <p>Temos um leque variado e significativo de parceiros financeiros que nos permite ter acesso à solução adequada a cada necessidade e nas melhores condições financeiras.</p><br/>
     
-            <p>Garantimos rigor, personalização e privacidade em cada processo de crédito. Somos uma empresa autorizada e supervisionada pelo Banco de Portugal.</p><br/>
+            <p>Garantimos rigor, personalização e privacidade em cada processo de crédito. Somos um intermediário de crédito vinculado, autorizado pelo Banco de Portugal, com o registo nº XXXX.</p><br/>
     
             <p>Ajudamos e simplificamos!</p>
         </div>
