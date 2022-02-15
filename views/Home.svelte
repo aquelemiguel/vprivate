@@ -22,7 +22,7 @@
 
                 <div class="services-row">
                     {#each data as service}
-						<div class="service-row-box" on:click={() => navigateTo(`/services#${service.id}`)}>
+						<div class="service-row-box" on:click={() => navigateTo(`/servicos#${service.id}`)}>
 							<span class="service-title">{service.title}</span>
 							<span class="learn-more">Saiba mais...</span>
 						</div>

@@ -1,14 +1,14 @@
 <div class="footer-container">
     <div class="footer-column">
         <h2>Navegação</h2>
-        <div on:click={() => window.location.href = '/about'}>Quem somos</div>
-        <div on:click={() => window.location.href = '/services'}>Serviços</div>
-        <div on:click={() => window.location.href = '/partners'}>Parceiros</div>
+        <div on:click={() => window.location.href = '/sobre'}>Quem somos</div>
+        <div on:click={() => window.location.href = '/servicos'}>Serviços</div>
+        <div on:click={() => window.location.href = '/parceiros'}>Parceiros</div>
     </div>
     <div class="footer-column">
         <h2>Navegação</h2>
-        <div on:click={() => window.location.href = '/contacts'}>Contactos</div>
-        <div>Política de Privacidade</div>
+        <div on:click={() => window.location.href = '/contactos'}>Contactos</div>
+        <div on:click={() => window.location.href = '/privacidade'}>Política de Privacidade</div>
         <div>Termos & Condições</div>
     </div>
     <div class="footer-column">
