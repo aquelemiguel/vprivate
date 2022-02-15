@@ -130,9 +130,13 @@
     .form-group > * {
         width: 100%;
         border: 0;
-        border-bottom: 2px solid #ccc;
+        border-bottom: 2px solid white;
         padding: 1rem;
-        background-color: #002566;
+        background-color: #001f53;
+        color: white;
+    }
+
+    .form-group *::placeholder {
         color: white;
     }
 
@@ -148,16 +152,12 @@
         border-bottom: 2px solid red;
     }
 
-    select:invalid {
-        color: grey;
-    }
-
     select:invalid option {
         color: white;
     }
 
     button {
-        background-color: #002566;
+        background-color: #001f53;
         color: var(--main-bg-color);
         border: none;
         min-width: 30%;
