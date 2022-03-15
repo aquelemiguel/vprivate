@@ -1,3 +1,9 @@
+<script lang="ts">
+    import Header from '../components/Header.svelte';
+    import Footer from '../components/Footer.svelte';
+</script>
+
+<Header></Header>
 <main>
     <div class="container">
         <h1>Política de privacidade</h1>
@@ -110,6 +116,7 @@
         </p>
     </div>
 </main>
+<Footer/>
 
 <style>
     main {
@@ -120,7 +127,7 @@
     }
 
     .container {
-        margin: 3rem 0;
+        margin: 8rem 0 4rem 0;
     }
 
     ul {

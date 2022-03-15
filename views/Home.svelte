@@ -11,7 +11,7 @@
 
 <main>
     <div class="main-container">
-        <img src="images/landing.jpg" alt="" />
+		<div class="background-image"></div>
 
         <div class="outer-overlay">
             <div class="inner-overlay">
@@ -55,10 +55,12 @@
 		height: 100vh;
 	}
 
-	.main-container img {
+	.background-image {
 		width: 100%;
 		height: 100%;
-		object-fit: cover;
+		background-image: linear-gradient(rgba(200, 157, 40, 0.6), rgba(200, 157, 40, 0.6)), url(../../images/landing2.jpg);
+		background-size: cover;
+		background-position: center;
 	}
 
 	.outer-overlay {

@@ -29,15 +29,16 @@
         justify-content: center;
         bottom: 0;
         width: 100%;
-        background-color: #003690;
         height: 40vh;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px -4px 12px;
+        background: #c89e28;
+        color: white;
     }
 
     .footer-column {
         display: flex;
         flex-basis: 20em;
         flex-direction: column;
-        color: #eae6e5;
         align-self: center;
     }
     

@@ -1,8 +1,11 @@
-<div class="outer-container">
-    <div class="inner-container">
-        <div class="banner">
-            <h1>Sobre nós</h1>
-        </div>
+<script lang="ts">
+    import Header from '../components/Header.svelte';
+</script>
+
+<Header></Header>
+<main>
+    <div class="container">
+        <h1>Sobre nós</h1>
     
         <p>
             Estamos integrados no Grupo V Private e nascemos com o intuito de complementar as necessidades dos nossos Clientes no que diz respeito à intermediação de crédito e consultadoria, tanto de particulares como de empresas.
@@ -38,42 +41,32 @@
             Ajudamos e simplificamos!
         </p>
     </div>
-</div>
+</main>
 
 <style>
-    h1 {
-        font-size: 3.5rem;
-    }
-
-    p, li {
-        font-size: 1.2rem;
-        text-align: justify;
-    }
-
-    .outer-container {
-        background: linear-gradient(270deg, #003690, #0047bf);
-        background-size: 400% 400%;
-
-        -webkit-animation: gradient 5s ease infinite;
-        -moz-animation: gradient 5s ease infinite;
-        animation: gradient 5s ease infinite;
-    }
-
-    .inner-container {
-        min-height: 100vh;
-        max-width: 75%;
+    main {
+        max-width: 50%;
 		margin: 0 auto;
         display: flex;
-        justify-content: center;
         flex-direction: column;
-        color: white;
     }
 
-    .banner {
-        width: 100%;
-        min-height: 8rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .container {
+        margin: 8rem 0 4rem 0;
+    }
+
+    li {
+        margin: 0.25rem 0;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin: 1rem 0;
+    }
+
+    p {
+        margin: 0.5rem 0;
+        text-align: justify;
     }
 </style>
