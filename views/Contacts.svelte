@@ -72,6 +72,10 @@
                     <h3>Contacto telefónico</h3>
                     <p>+351 912 345 678</p>
                     <p>+351 912 345 678</p>
+
+                    <h3>Horário</h3>
+                    <p>Dias úteis das 9h00 às 18h00</p>
+                    <p>Fechado aos fins-de-semana e feriados</p>
                 </div>
             </div>
     
@@ -221,7 +225,7 @@
         margin: 0.5rem 0;
     }
 
-    .company-info > h3:last-of-type {
+    .company-info > h3:not(:first-child) {
         margin-top: 2rem;
     }
 </style>
