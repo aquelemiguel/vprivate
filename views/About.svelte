@@ -1,5 +1,6 @@
 <script lang="ts">
-    import Header from '../components/Header.svelte';
+    import Footer from '../components/Footer.svelte';
+import Header from '../components/Header.svelte';
 </script>
 
 <Header></Header>
@@ -16,9 +17,9 @@
         </p>
     
         <ul>
-            <li>Registo nº XXXX;</li>
-            <li>Seguro de responsabilidade civil Intermediação de Crédito (exceto Imobiliário) da Seguradora XXXX - Apólice XXXX, válida de XXX a XXX;</li>
-            <li>Seguro de responsabilidade civil de crédito para imóveis de habitação da seguradora XXXX Seguradora XXXX - Apólice XXXX, válida de XXX a XXX.</li>
+            <li>Registo nº 6 715;</li>
+            <li>Seguro de responsabilidade civil Intermediação de Crédito (exceto Imobiliário) da Seguradora Allianz - Apólice nº 206 388 714;</li>
+            <li>Seguro de responsabilidade civil de crédito para imóveis de habitação da Seguradora Allianz - Apólice Crédito de Habitação nº 206 387 393.</li>
         </ul>
     
         <p>
@@ -42,6 +43,7 @@
         </p>
     </div>
 </main>
+<Footer />
 
 <style>
     main {

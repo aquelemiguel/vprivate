@@ -2,7 +2,10 @@
     <div class="footer-column">
         <h2>Navegação</h2>
         <div on:click={() => window.location.href = '/sobre'}>Quem somos</div>
-        <div on:click={() => window.location.href = '/servicos'}>Serviços</div>
+        <div on:click={() => {
+            window.location.href = '/';
+            window.scrollTo(0);
+        }}>Serviços</div>
         <div on:click={() => window.location.href = '/parceiros'}>Parceiros</div>
     </div>
     <div class="footer-column">
@@ -13,7 +16,7 @@
     </div>
     <div class="footer-column">
         <h2>Informação Legal</h2>
-        <div>ICV nº XXXXXXX</div>
+        <div>Intermediário de Crédito Vinculado nº 6 715</div>
         <div>RAL</div>
         <div>Livro de Reclamações</div>
     </div>

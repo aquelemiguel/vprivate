@@ -17,7 +17,7 @@
             <div class="inner-overlay">
                 <div class="title-container">
                     <h1>V PRIVATE</h1>
-                    <h3>Intermediário Crédito</h3>
+                    <h3>Intermediário de Crédito Vinculado</h3>
                 </div>
 
                 <div class="services-row">
@@ -39,7 +39,7 @@
             
             <p>Temos um leque variado e significativo de parceiros financeiros que nos permite ter acesso à solução adequada a cada necessidade e nas melhores condições financeiras.</p><br/>
     
-            <p>Garantimos rigor, personalização e privacidade em cada processo de crédito. Somos um intermediário de crédito vinculado, autorizado pelo Banco de Portugal, com o registo nº XXXX.</p><br/>
+            <p>Garantimos rigor, personalização e privacidade em cada processo de crédito. Somos um intermediário de crédito vinculado, autorizado pelo Banco de Portugal, com o registo nº 6 715.</p><br/>
     
             <p>Ajudamos e simplificamos!</p>
         </div>
@@ -52,13 +52,14 @@
 	.main-container {
 		position: relative;
 		overflow: hidden;
-		height: 100vh;
+		height: 80vh;
 	}
 
 	.background-image {
 		width: 100%;
 		height: 100%;
-		background-image: linear-gradient(rgba(200, 157, 40, 0.6), rgba(200, 157, 40, 0.6)), url(../../images/landing2.jpg);
+		background-image: url(../../images/landing2.jpg);
+		filter: blur(5px);
 		background-size: cover;
 		background-position: center;
 	}
@@ -153,7 +154,7 @@
 	}
 
 	.about-overlay {
-		margin: 5rem 0rem;
+		margin: 3rem 0rem;
 	}
 
 	.about-overlay > h2 {

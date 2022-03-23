@@ -67,15 +67,14 @@
     
                 <div class="company-info">
                     <h3>Email</h3>
-                    <p>vprivate@email.com</p>
+                    <p>manuel.leal@vprivate.pt</p>
     
                     <h3>Contacto telefónico</h3>
-                    <p>+351 912 345 678</p>
-                    <p>+351 912 345 678</p>
+                    <p>+351 938 885 971</p>
+                    <p>+351 220 044 700</p>
 
                     <h3>Horário</h3>
                     <p>Dias úteis das 9h00 às 18h00</p>
-                    <p>Fechado aos fins-de-semana e feriados</p>
                 </div>
             </div>
     
