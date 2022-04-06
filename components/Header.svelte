@@ -1,9 +1,25 @@
 <script lang="ts">
+    import { onMount } from "svelte";
+
+    let url = '';
+    onMount(() => url = getCurrentPage());
+
+    const getCurrentPage = () => {
+        const urlParts = window.location.href.split('/');
+        return urlParts[urlParts.length - 1];
+    }
 </script>
 
 <main>
     <div class="header-container">
-        <img on:click={() => window.location.href = '/'} class="header-logo" src="images/vprivate-transparent.png" alt="V Private Logo">
+        <div class="header-row">
+            <img on:click={() => window.location.href = '/'} class="header-logo" src="images/vprivate-transparent.png" alt="V Private Logo">
+            <span class="navbar-option navbar-link" on:click={() => window.location.href = '/'}>Início</span>
+            <span class="navbar-option navbar-link {url.includes('sobre') ? 'selected' : ''}" on:click={() => window.location.href = '/sobre'}>Quem somos</span>
+            <span class="navbar-option navbar-link {url.includes('servicos') ? 'selected' : ''}" on:click={() => window.location.href = '/servicos'}>Serviços</span>
+            <span class="navbar-option navbar-link {url.includes('contactos') ? 'selected' : ''}" on:click={() => window.location.href = '/contactos'}>Contactos</span>
+            <button class="navbar-option lets-talk-button">Vamos conversar?</button>
+        </div>
     </div>
 </main>
 
@@ -26,10 +42,54 @@
         justify-content: center;
     }
 
+    .header-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+
     .header-logo {
         height: 70%;
-        width: 100%;
         object-fit: contain;
         cursor: pointer;
+    }
+
+    .navbar-option {
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .navbar-option:hover, .navbar-option.selected {
+        color: #c89e28;
+        font-weight: bold;
+    }
+
+    .navbar-link {
+        flex: 1 1 0px;
+        text-align: center;
+    }
+
+    .lets-talk-button {
+        margin-left: 1rem;
+        margin-bottom: unset;
+    }
+
+    .lets-talk-button {
+        background-color: #c89e28;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .lets-talk-button:hover {
+        background-color: white;
+        color: #c89e28;
     }
 </style>
