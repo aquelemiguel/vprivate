@@ -10,7 +10,7 @@
 <Header />
 <main>
 	{#each data as service, i}
-		<Service data={service} altTheme={i % 2 !== 0}/>
+		<Service data={service} />
 	{/each}
 </main>
 <Footer />

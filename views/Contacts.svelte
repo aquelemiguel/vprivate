@@ -56,7 +56,7 @@
                         <textarea bind:value={form.message} placeholder="Mensagem*" required></textarea>
                     </div>
     
-                    <button disabled={false} on:click={onSend}>Enviar</button>
+                    <button class="lets-talk-button" disabled={false} on:click={onSend}>Enviar</button>
                 </form>
             </div>
 
@@ -135,7 +135,7 @@
         border: 0;
         border-bottom: 2px solid white;
         padding: 1rem;
-        background-color: #001f53;
+        background-color: #c89e28;
         color: white;
     }
 
@@ -160,21 +160,10 @@
     }
 
     button {
-        background-color: #001f53;
-        color: var(--main-bg-color);
-        border: none;
         min-width: 30%;
         font-size: 1.2em;
-        font-weight: bold;
-        cursor: pointer;
-        transition: all 0.2s ease-in-out;
         margin: 1rem 0;
         height: 4rem;
-    }
-
-    button:hover {
-        background-color: var(--main-bg-color);
-        color: var(--alt-bg-color);
     }
 
     .form-container {
@@ -183,7 +172,7 @@
 
     .form-left-side {
         width: 50%;
-        background-color: #003690;
+        background-color: #c89e28;
         padding: 3rem 3rem 1rem 3rem;
         box-shadow: rgba(0, 0, 0, 0.6) 0px 40px 40px -15px;
         border-radius: 0.25rem;
@@ -210,7 +199,7 @@
 
     .company-info {
         flex-grow: 1;
-        background-color: #003690;
+        background-color: #c89e28;
         padding: 2rem 3rem;
         color: white;
     }

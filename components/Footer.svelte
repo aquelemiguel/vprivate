@@ -1,24 +1,24 @@
 <div class="footer-container">
     <div class="footer-column">
         <h2>Navegação</h2>
-        <div on:click={() => window.location.href = '/sobre'}>Quem somos</div>
-        <div on:click={() => {
+        <div class="footer-link" on:click={() => window.location.href = '/sobre'}>Quem somos</div>
+        <div class="footer-link" on:click={() => {
             window.location.href = '/';
             window.scrollTo(0);
         }}>Serviços</div>
-        <div on:click={() => window.location.href = '/parceiros'}>Parceiros</div>
+        <div class="footer-link" on:click={() => window.location.href = '/parceiros'}>Parceiros</div>
     </div>
     <div class="footer-column">
         <h2>Navegação</h2>
-        <div on:click={() => window.location.href = '/contactos'}>Contactos</div>
-        <div on:click={() => window.location.href = '/privacidade'}>Política de Privacidade</div>
-        <div>Termos & Condições</div>
+        <div class="footer-link" on:click={() => window.location.href = '/contactos'}>Contactos</div>
+        <div class="footer-link" on:click={() => window.location.href = '/privacidade'}>Política de Privacidade</div>
+        <div class="footer-link">Termos & Condições</div>
     </div>
     <div class="footer-column">
         <h2>Informação Legal</h2>
         <div>Intermediário de Crédito Vinculado nº 6 715</div>
-        <div>RAL</div>
-        <div>Livro de Reclamações</div>
+        <div class="footer-link">RAL</div>
+        <div class="footer-link">Livro de Reclamações</div>
     </div>
 </div>
 
@@ -51,5 +51,10 @@
 
     .footer-column div {
         margin: 0.25rem 0;
+    }
+
+    .footer-link:hover {
+        font-weight: bold;
+        cursor: pointer;
     }
 </style>

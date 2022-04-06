@@ -11,6 +11,23 @@
 	<link rel='stylesheet' href='/build/bundle.css'>
 
 	<script defer src='/build/bundle.js'></script>
+
+	<script type="text/javascript">
+		(function () {
+			var options = {
+				facebook: "82713049484", // Facebook page ID
+				whatsapp: "938 885 971", // WhatsApp number
+				call_to_action: "Vamos conversar?", // Call to action
+				button_color: "#c89e28", // Color of button
+				position: "right", // Position may be 'right' or 'left'
+				order: "facebook,whatsapp", // Order of buttons
+			};
+			var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+			var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+			s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+			var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+		})();
+	</script>
 </head>
 
 <body>

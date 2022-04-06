@@ -3,6 +3,7 @@
 	const data = json['default'];
 
 	import Footer from '../components/Footer.svelte';
+import CustomerCarousel from '../components/CustomerCarousel.svelte';
     
     const navigateTo = (url: string) => {
         window.location.href = url;
@@ -16,8 +17,7 @@
         <div class="outer-overlay">
             <div class="inner-overlay">
                 <div class="title-container">
-                    <h1>V PRIVATE</h1>
-                    <h3>Intermediário de Crédito Vinculado</h3>
+                    <img class="header-logo" src="images/vprivate-transparent-white.png" alt="V Private Logo">
                 </div>
 
                 <div class="services-row">
@@ -45,6 +45,7 @@
         </div>
     </div>
 
+	<CustomerCarousel />
     <Footer />
 </main>
 
@@ -82,23 +83,6 @@
 		align-items: center;
 		justify-content: center;
 		color: white;
-	}
-
-	.inner-overlay h1 {
-		font-size: 128px;
-		color: white;
-		text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.212),
-            		 0px 8px 13px rgba(0,0,0,0.1),
-             		 0px 18px 23px rgba(0,0,0,0.1);
-	}
-
-	.inner-overlay h3 {
-        font-weight: 300;
-        font-size: 20px;
-        text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.212),
-            		 0px 8px 13px rgba(0,0,0,0.1),
-             		 0px 18px 23px rgba(0,0,0,0.1);
-        margin: unset;
 	}
 
 	.title-container {

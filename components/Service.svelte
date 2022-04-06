@@ -1,16 +1,12 @@
 <script>
-    export let data, altTheme;
+    export let data;
 </script>
 
-<main id="{data.id}" class="{altTheme ? 'alt-theme' : 'default-theme'}">
+<main id="{data.id}">
     <div class="container">
         <div class="service-title">
             <h1>{data.title}</h1>
         </div>
-
-        <!-- <span class="service-subtitle">
-            O que pretende?
-        </span> -->
 
         <div class="subservice-flex">
             {#each data.features as feature}
@@ -22,79 +18,25 @@
             <div class="service-image">
                 <img src="images/example.jpg" alt="" />
             </div>
-            <!-- <div class="service-title">
-                <h1>{data.title}</h1>
-            </div> -->
             <div class="service-description">
                 {#each data.description as line}
                     <p>{line}</p>
                 {/each}
             </div>
-            <button class="service-button">Vamos conversar?</button>
+            <button class="lets-talk-button" on:click={() => window.location.href = '/contactos'}>Vamos conversar?</button>
         </div>
     </div>
 </main>
 
 <style lang="scss">
-    :root {
-        --main-bg-color: rgb(250, 250, 250);
-        --alt-bg-color: #003690;
-    }
-
     main {
         min-height: 100vh;
+        padding-top: 2.5rem;
     }
 
-    button {
-        background-color: var(--alt-bg-color);
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-        color: var(--main-bg-color);
-        border: none;
-        border-radius: 5px;
-        padding: 10px;
+    .lets-talk-button {
         font-size: 1.2em;
         font-weight: bold;
-        cursor: pointer;
-        transition: all 0.2s ease-in-out;
-    }
-
-    button:hover {
-        background-color: var(--main-bg-color);
-        color: var(--alt-bg-color);
-    }
-
-    .default-theme {
-        background: linear-gradient(270deg, #ffffff, #f2f2f2);
-        background-size: 400% 400%;
-
-        -webkit-animation: gradient 5s ease infinite;
-        -moz-animation: gradient 5s ease infinite;
-        animation: gradient 5s ease infinite;
-
-        color: black;
-    }
-
-    .alt-theme {
-        background: linear-gradient(270deg, #003690, #0047bf);
-        background-size: 400% 400%;
-
-        -webkit-animation: gradient 5s ease infinite;
-        -moz-animation: gradient 5s ease infinite;
-        animation: gradient 5s ease infinite;
-
-        color: white;
-    }
-
-    @keyframes gradient {
-        0% {
-            background-position: 0% 50%;
-        }
-        50% {
-            background-position: 100% 50%;
-        }
-        100% {
-            background-position: 0% 50%;
-        }
     }
 
     .container {
@@ -107,10 +49,6 @@
         min-height: 100vh;
     }
 
-    h1 {
-        font-size: 52px;
-    }
-
     p {
         font-size: 20px;
     }
@@ -120,12 +58,8 @@
     }
 
     .service-title {
-        align-self: center;
-    }
-
-    .service-subtitle {
-        font-size: 1rem;
-        margin: 2rem 0;
+        align-self: flex-start;
+        font-size: 32px;
     }
 
     .subservice-flex {
@@ -149,12 +83,13 @@
         border-radius: 5px;
         padding: 10px;
         font-weight: bold;
-        // background-color: var(--alt-bg-color);
+        background-color: #c89e28;
+        color: white;
     }
 
     .service-grid {
         display: grid;
-        grid-template-columns: auto;
+        grid-auto-rows: auto 5rem;
         gap: 2rem;
         margin: 2rem 0;
     }
@@ -171,7 +106,6 @@
     }
 
     .service-description {
-        margin-left: 2rem;
         grid-column: 2;
         grid-row: 1;
     }

@@ -75,21 +75,4 @@
         margin-left: 1rem;
         margin-bottom: unset;
     }
-
-    .lets-talk-button {
-        background-color: #c89e28;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        padding: 10px;
-        font-weight: bold;
-        cursor: pointer;
-        transition: all 0.2s ease-in-out;
-    }
-
-    .lets-talk-button:hover {
-        background-color: white;
-        color: #c89e28;
-    }
 </style>

@@ -1,3 +1,9 @@
+<script lang="ts">
+    import Header from '../components/Header.svelte';
+    import Footer from '../components/Footer.svelte';
+</script>
+
+<Header></Header>
 <div class="container">
     <div class="banner">
         <h1>Parceiros</h1>
@@ -37,6 +43,7 @@
         </div>
     </div>
 </div>
+<Footer></Footer>
 
 <style>
     h1 {
