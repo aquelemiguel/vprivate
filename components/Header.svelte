@@ -1,23 +1,36 @@
 <script lang="ts">
     import { onMount } from "svelte";
+    import ContactsModal from "../components/ContactsModal.svelte";
 
     let url = '';
+    let shouldOpenModal = false;
+
     onMount(() => url = getCurrentPage());
 
     const getCurrentPage = () => {
         const urlParts = window.location.href.split('/');
         return urlParts[urlParts.length - 1];
     }
+
+    const openContactsModal = () => {
+        shouldOpenModal = true;
+    }
 </script>
 
 <main>
+    <ContactsModal bind:isOpen={shouldOpenModal} />
+
     <div class="header-container">
         <div class="header-row">
             <img on:click={() => window.location.href = '/'} class="header-logo" src="images/vprivate-transparent.png" alt="V Private Logo">
             <span class="navbar-option navbar-link" on:click={() => window.location.href = '/'}>Início</span>
             <span class="navbar-option navbar-link {url.includes('sobre') ? 'selected' : ''}" on:click={() => window.location.href = '/sobre'}>Quem somos</span>
             <span class="navbar-option navbar-link {url.includes('servicos') ? 'selected' : ''}" on:click={() => window.location.href = '/servicos'}>Serviços</span>
-            <button class="navbar-option lets-talk-button">Vamos conversar?</button>
+            <button
+                class="navbar-option lets-talk-button"
+                on:click={() => openContactsModal()}>
+                Vamos conversar?
+            </button>
         </div>
     </div>
 </main>
