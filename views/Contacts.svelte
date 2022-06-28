@@ -24,10 +24,6 @@
 
 <div class="outer-container">
     <div class="inner-container">
-        <!-- <div class="banner">
-            <h1>Contactos</h1>
-        </div> -->
-
         <div class="form-container">
             <div class="form-left-side">
                 <form class:submitted>

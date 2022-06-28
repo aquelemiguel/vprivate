@@ -17,7 +17,6 @@
             <span class="navbar-option navbar-link" on:click={() => window.location.href = '/'}>Início</span>
             <span class="navbar-option navbar-link {url.includes('sobre') ? 'selected' : ''}" on:click={() => window.location.href = '/sobre'}>Quem somos</span>
             <span class="navbar-option navbar-link {url.includes('servicos') ? 'selected' : ''}" on:click={() => window.location.href = '/servicos'}>Serviços</span>
-            <span class="navbar-option navbar-link {url.includes('contactos') ? 'selected' : ''}" on:click={() => window.location.href = '/contactos'}>Contactos</span>
             <button class="navbar-option lets-talk-button">Vamos conversar?</button>
         </div>
     </div>

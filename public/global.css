@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap");
 
 * {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 p {
@@ -9,7 +9,7 @@ p {
 }
 
 h1 {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   margin: unset;
 }
 
@@ -85,7 +85,8 @@ button:focus {
 
 .lets-talk-button {
   background-color: #c89e28;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
   color: white;
   border: none;
   border-radius: 5px;
@@ -100,6 +101,12 @@ button:focus {
   color: #c89e28;
 }
 
-a[href*="getbutton.io"] {
+/** try to delete the get button span **/
+div.sbsi7l-0.evMtho {
   display: none;
+}
+
+/** make "vamos conversar" button larger **/
+div.sc-8eqc3y-0.fXBuHm {
+  font-size: 16px;
 }

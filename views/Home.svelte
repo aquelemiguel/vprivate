@@ -60,7 +60,7 @@ import CustomerCarousel from '../components/CustomerCarousel.svelte';
 		width: 100%;
 		height: 100%;
 		background-image: url(../../images/landing2.jpg);
-		filter: blur(5px);
+		filter: blur(1px);
 		background-size: cover;
 		background-position: center;
 	}

@@ -6,7 +6,6 @@
             window.location.href = '/';
             window.scrollTo(0);
         }}>Serviços</div>
-        <div class="footer-link" on:click={() => window.location.href = '/parceiros'}>Parceiros</div>
     </div>
     <div class="footer-column">
         <h2>Navegação</h2>
