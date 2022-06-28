@@ -10,7 +10,27 @@
 <Header />
 <main>
 	{#each data as service, i}
-		<Service data={service} />
+		<div class="service-container">
+			<Service data={service} />
+		</div>
 	{/each}
 </main>
 <Footer />
+
+<style>
+	main {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 8rem 0 4rem 0;
+	}
+
+	.service-container {
+		width: 70%;
+		height: 70%;
+	}
+
+	.service-container:not(:last-of-type) {
+		margin-bottom: 2rem;
+	}
+</style>
