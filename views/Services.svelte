@@ -22,7 +22,8 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		margin: 8rem 0 4rem 0;
+		padding: 8rem 0 4rem 0;
+		background-color: whitesmoke;
 	}
 
 	.service-container {
