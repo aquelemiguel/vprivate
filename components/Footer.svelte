@@ -17,9 +17,13 @@
     </div>
     <div class="footer-column footer-legal">
         <h2>Informação Legal</h2>
-        <div>ICV nº 6715</div>
-        <div class="footer-link">RAL</div>
-        <div class="footer-link">Livro de Reclamações</div>
+        <div>Intermediário de Crédito Vinculado pelo Banco de Portugal: 0006715</div>
+        <div>
+            <span class="footer-link" on:click={() => window.location.href = 'https://www.cicap.pt/'}>CICAP</span>
+            <span> • </span>
+            <span class="footer-link" on:click={() => window.location.href = 'https://www.cniacc.pt/pt'}>CNIACC</span>
+        </div>
+        <img class="complaint-book-logo" src="images/livro-reclamacoes.png" alt="livro de reclamações" on:click={() => window.location.href = 'https://www.livroreclamacoes.pt/Pedido/Reclamacao'}>
     </div>
 </div>
 
@@ -27,6 +31,12 @@
     .brand-logo {
         width: 200px;
         margin-bottom: 1rem;
+    }
+
+    .complaint-book-logo {
+        margin: 1rem 0;
+        width: 150px;
+        cursor: pointer;
     }
 
     .contact-info {
@@ -41,17 +51,17 @@
         display: flex;
         justify-content: center;
         bottom: 0;
-        height: 40vh;
+        height: 30vh;
         box-shadow: rgba(0, 0, 0, 0.1) 0px -4px 12px;
         background: rgb(40, 30, 3);
         color: white;
-        padding: 0 10rem;
+        padding: 3rem 10rem;
     }
 
     .footer-column {
         display: flex;
         flex-direction: column;
-        align-self: center;
+        align-self: flex-start;
     }
 
     .footer-contacts {
@@ -61,7 +71,7 @@
     }
 
     .footer-navigation, .footer-legal {
-        flex-basis: 20%;
+        flex-basis: 25%;
     }
     
     .footer-column h2 {
