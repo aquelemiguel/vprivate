@@ -2,7 +2,8 @@
     export let data;
 </script>
 
-<div class="card-container" id="{data.id}">
+<div class="card-anchor" id="{data.id}"></div>
+<div class="card-container">
     <div class="card-preview">
         <h1 class="card-header">{data.title}</h1>
         <div class="card-image" style={
@@ -31,9 +32,17 @@
         max-width: 100%;
         overflow: hidden;
         width: 100%;
+        min-height: 50vh;
         border-radius: 10px;
         box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
         background-color: white;
+    }
+
+    .card-anchor {
+        display: block;
+        position: relative;
+        top: -16rem;
+        visibility: hidden;
     }
 
     .card-preview {
@@ -62,14 +71,11 @@
         z-index: 1;
     }
 
-    .card-button {
-    }
-
     .card-info {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 2rem;
+        margin: 5rem;
     }
 
     .card-description > p {

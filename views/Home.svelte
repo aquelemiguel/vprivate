@@ -3,7 +3,7 @@
 	const data = json['default'];
 
 	import Footer from '../components/Footer.svelte';
-import CustomerCarousel from '../components/CustomerCarousel.svelte';
+	import CustomerCarousel from '../components/CustomerCarousel.svelte';
     
     const navigateTo = (url: string) => {
         window.location.href = url;
@@ -45,7 +45,9 @@ import CustomerCarousel from '../components/CustomerCarousel.svelte';
         </div>
     </div>
 
-	<CustomerCarousel />
+	<div class="customer-carousel-container">
+		<CustomerCarousel />
+	</div>
     <Footer />
 </main>
 
@@ -157,5 +159,10 @@ import CustomerCarousel from '../components/CustomerCarousel.svelte';
 		main {
 			max-width: none;
 		}
+	}
+
+	.customer-carousel-container {
+		max-width: 60%;
+		margin: 0 auto 3rem auto;
 	}
 </style>

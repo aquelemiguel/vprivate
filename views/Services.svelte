@@ -27,11 +27,18 @@
 	}
 
 	.service-container {
-		width: 70%;
-		height: 70%;
+		width: 60%;
+		height: 100vh;
 	}
 
-	.service-container:not(:last-of-type) {
-		margin-bottom: 2rem;
+	@media only screen and (max-width: 1200px) {
+		.service-container {
+			width: 90%;
+			height: 90%;
+		}
+	}
+
+	.service-container:first-of-type {
+		margin-top: 8rem;
 	}
 </style>
